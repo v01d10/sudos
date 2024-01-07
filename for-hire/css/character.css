@@ -1,0 +1,118 @@
+.character_menu_holder {
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character_menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter:opacity(50%);
+}
+
+.character_menu_window {
+    border: 3px solid black;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.character_section_holder {
+    width: 95%;
+    height: 29%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    margin-top: 10px;
+}
+
+.basic_stats_table, .statistics_table {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /* padding: 5px; */
+}
+.statistics_table {
+    margin-top: 20qpx;
+}
+
+.basic_stats_cell, .basic_stats_cell_lower{
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+    margin: 5px;
+} 
+
+.basic_stats_cell_name{
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px;
+    margin: 2px;
+    font-size: 25px;
+    font-weight: bold;
+} 
+.name_cell {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    padding: 2px;
+}
+.value_cell {
+    padding: 3px;
+}
+
+
+.statistics_menu_window {
+    border: 3px solid black;
+    border-left: 0px;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    overflow-y: scroll;
+    padding-top: 10px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.stat_cell {
+    border: 2px solid black;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.stat_name {
+    border-right: 2px solid black;
+    width: 70%;
+    text-align: center;
+    padding: 4px;
+    /* font-weight: bold; */
+}
+.stat_value {
+    width: 30%;
+    text-align: center;
+    padding: 4px;
+}

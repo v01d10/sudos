@@ -1,0 +1,202 @@
+#wrapper {
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game_holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 50vw;
+}
+
+#toppest_info_panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#money_text {
+    border: 3px solid black;
+    border-bottom: 0px;
+    height: 30px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#topper_info_panel {
+    border: 3px solid black;
+    border-bottom: 0px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#experience_text, #health_text, #hunger_text, #thirst_text  {
+    position: absolute;
+    font-size: large;
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#top_info_panel {
+    border: 3px solid black;
+    border-bottom: 0px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#health_bar, #hunger_bar_border {
+    border-right: 3px solid black;
+}
+#health_bar_border, #experience_bar_border ,#hunger_bar_border, #thirst_bar_border {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#health_bar, #experience_bar, #hunger_bar, #thirst_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#health_bar {
+    background-color: hsl(0, 80%, 60%);
+}
+#experience_bar {
+    background-color: hsl(59, 60%, 60%);
+}
+#hunger_bar {
+    background-color: hsl(138, 80%, 60%);
+}
+#thirst_bar {
+    background-color: hsl(240, 70%, 70%);
+}
+
+
+#description_text {
+    border: 3px solid black;
+    text-align: center;
+    border-bottom-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 30vw;
+    padding: 30px;
+    font-size: larger;
+    font-weight:500;
+    user-select: none;
+    /* background-color: white; */
+}
+
+#bottom_menu {
+    border: 3px solid black;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.bottom_menu_button {
+    border-right: 3px solid black;
+    height: 100%;
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: large;
+    background-color: white;
+
+    /* font-weight: bold; */
+}
+#journal_button {
+    border-right: 0px;
+}
+.bottom_menu_button:hover {
+    background-color: black;
+    -webkit-text-fill-color: white;
+}
+.bottom_menu_button:active {
+    background-color: white;
+    -webkit-text-fill-color: black;
+}
+
+#action_input_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+#action_input {
+    all: unset;
+    border: 3px solid black;
+    border-top: 0px;
+    width: 100%;
+    /* height: 30px; */
+    height: 100%;
+    padding: 3px;
+    font-size: medium;
+    text-align: center;
+}
+
+#submit_button {
+    border: 3px solid black;
+    /* border-top: 0px; */
+    border-left: 0px;
+    width: 10%;
+    height: 42px;
+    font-weight: bold;
+}
+#submit_button:hover {
+    background-color: black;
+    -webkit-text-fill-color: white;
+}
+
+#message_center {
+    translate: 0px 30px;
+    height: 60%;
+    width: 400px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#message_holder {
+    border: 3px solid black;
+    border-left: none;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.message {
+    border: 2px solid black;
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+}

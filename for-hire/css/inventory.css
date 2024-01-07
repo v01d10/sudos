@@ -1,0 +1,103 @@
+.inventory_menu_holder {
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventory_menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter:opacity(50%);
+}
+
+.inventory_menu_window {
+    border: 3px solid black;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    overflow-y: scroll;
+}
+.inventory_menu_slot {
+    border: 3px solid black;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    margin: 5px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    user-select: none;
+    font-size: 17px;
+}
+.inventory_menu_slot:hover {
+    background-color:black;
+    -webkit-text-fill-color: white;
+}
+
+.sort_button {
+    border: 3px solid black;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+.sort_button img {
+    width: 100%;
+    height: 100%;
+}
+.sort_button img:hover {
+    background-color: black;
+    filter: invert(100%);
+}
+
+.equipment_menu_window {
+    border: 3px solid black;
+    border-left: 0px;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.equipment_menu_window::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.equipment_menu_slot {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 35px;
+    margin: 2px;
+    user-select: none;
+    font-size: 17px;
+}
+.equipment_menu_slot:hover {
+    background-color:black;
+    -webkit-text-fill-color: white;
+}

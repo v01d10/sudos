@@ -1,0 +1,274 @@
+body {
+    background-color: blanchedalmond;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+    width: 100vw;
+}
+
+#combat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+}
+
+#enemy_details {
+    border: 3px black solid;
+    border-bottom-width: 0px;
+    width: 50%;
+}
+
+#enemy_name {
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    user-select: none;
+    cursor: default
+}
+
+#enemy_health_border {
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+#enemy_health_bar {
+    background-color: hsl(0, 70%, 50%);
+    padding: 5px;
+}
+
+#enemy_health_text {
+    margin: 0px;
+    font-weight: bold;
+    user-select: none;
+    cursor: default;
+    -webkit-text-fill-color: white;
+    position: absolute;
+}
+
+#enemy_image {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 98.5%;
+    border: 3px black solid;
+    border-bottom-width: 3px;
+}
+
+#enemy_image img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#enemy_image img:active {
+    animation: shake 0.5s;
+    filter: brightness(250%);
+    filter: contrast(250%);
+}
+
+
+#action_menu,  #action_menu td{
+    border: 3px black solid;
+}
+
+#action_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-width: 0px;
+}
+
+#action_menu td{
+    padding: 0px;
+    width: 100px;
+    height: 32px;
+    text-align: center;
+}
+
+#action_menu td:active{
+    background-color: black;
+    -webkit-text-fill-color: white;
+}
+
+#action_menu td p{
+    user-select: none;
+    cursor: default;
+}
+
+#player_resources {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#player_health_border, #player_energy_border, #player_mana_border {
+    border-top-width: 0px;
+    width: 33%;
+    border: 3px black solid;
+    border-top-width: 0px;
+}
+
+#player_health_text, #player_energy_text, #player_mana_text {
+    margin: 0px;
+    font-weight: bold;
+    -webkit-text-fill-color: white;
+    position: absolute;
+    user-select: none;
+    cursor: default;
+}
+
+#player_health_bar {
+    background-color: #d92626;
+    padding: 5px;
+    /* border-right-width: 0px; */
+}
+#player_energy_bar{
+    background-color: olivedrab;
+    padding: 5px;
+}
+#player_mana_bar {
+    background-color: blueviolet;
+    padding: 5px;
+}
+
+#bottom_menu{
+    width: 98.5%;
+    border: 3px solid black;
+    border-top-width: 0px;
+}
+
+.action_menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter:opacity(40%);
+}
+
+.action_menu_window {
+    border: 3px solid black;
+    width: 190px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: blanchedalmond;
+    /* scrollbar-width: none; */
+}
+
+.action_menu_window::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.bottom_menu_slot {
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    margin-bottom: 0px;
+    margin-right: 0.5px;
+    user-select: none;
+    background-color: white;
+}
+.bottom_menu_slot_icon:hover {
+    background-color:blanchedalmond;
+}
+
+.bottom_menu_slot_icon {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    user-select: none;
+    background-color: white;
+}
+
+#turn_timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-width: 3px;
+    border: 3px solid black;
+    border-top: 0px;
+    width: 98.5%;
+    height: 32px;
+}
+
+#turn_timer_border {
+    width: 100%;
+    height: 100%;
+}
+
+#turn_timer_bar {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(120, 45%, 36%);    
+}
+
+#turn_timer_text {
+    margin: 0px;
+    padding: 1px;   
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    position: absolute;
+}
+
+#pause_fight_button {
+    background-color: black;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+#pause_fight_button img {
+    user-select: none;
+}
+#pause_fight_button:hover {
+    background-color: rgb(39, 39, 39);
+}
+#pause_fight_button:active {
+    background-color: white;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

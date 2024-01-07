@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/inventory.css">
+    <link rel="stylesheet" href="./css/character.css">
+    <link rel="icon" type="image/x-icon" href="./img/misc/favicon_0.png">
+    <title>For hire</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="game_holder">
+            <div id="game">
+                <div id="toppest_info_panel">
+                    <div id="money_text">Money: 0</div>
+                </div>
+                <div id="topper_info_panel">
+                    <div id="health_bar_border"> 
+                        <p id="health_text">Health</p>
+                        <div id="health_bar"></div>
+                    </div>
+                    <div id="experience_bar_border"> 
+                        <p id="experience_text">Level: 0</p>
+                        <div id="experience_bar"></div>
+                    </div>
+                </div>
+                <div id="top_info_panel">
+                    <div id="hunger_bar_border"> 
+                        <p id="hunger_text">Hunger</p>
+                        <div id="hunger_bar"></div>
+                    </div>
+                    <div id="thirst_bar_border"> 
+                        <p id="thirst_text">Thirst</p>
+                        <div id="thirst_bar"></div>
+                    </div>
+                </div>
+                <div id="location_area">
+                    <div id="description_text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, suscipit minus accusamus aliquam explicabo recusandae voluptas numquam? Cumque, nesciunt delectus.
+                    </div>
+                </div>
+    
+                <div id="bottom_menu">
+                    <div class="bottom_menu_button" id="inventory_button"> Inventory </div>
+                    <div class="bottom_menu_button" id="character_button"> Character </div>
+                    <div class="bottom_menu_button" id="journal_button"> Journal </div>
+                </div>
+                
+                <form id="action_input_form" autocomplete="off">
+                    <input id="action_input" type="text" placeholder="What are you going to do?">
+                </form>
+            </div>
+
+            <div id="message_center">
+                <div id="message_holder">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="module" src="./script/text-engine/text_engine.js"></script>
+    <script type="module" src="./script/text-engine/travel.js"></script>
+    <script type="module" src="./script/text-engine/locations/location.js"></script>
+    <script type="module" src="./script/text-engine/places/place.js"></script>
+    <script type="module" src="./script/player.js"></script>
+    <script type="module" src="./script/text-engine/inventory/inventory.js"></script>
+</body>
+</html>
